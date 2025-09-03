@@ -28,7 +28,7 @@ A minimalistic Spring Boot application that helps you track your daily mood and 
 
 1. **Clone or download the project**
    ```bash
-   git clone <your-repo-url>
+   git clone git@github.com:ARVLEMED/AI-Capstone-Project.git
    cd daily-mood-tracker
    ```
 
