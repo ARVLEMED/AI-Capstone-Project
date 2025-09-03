@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <link rel="stylesheet" href="/css/Styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Daily Mood Tracker</h1>
+        
+        <div id="message" class="message" style="display: none;"></div>
+        
+        <div class="mood-input">
+            <h3 class="mood-question">How are you feeling today?</h3>
+            <div class="mood-scale">
+                <div class="mood-option" data-rating="1">1</div>
+                <div class="mood-option" data-rating="2">2</div>
+                <div class="mood-option" data-rating="3">3</div>
+                <div class="mood-option" data-rating="4">4</div>
+                <div class="mood-option" data-rating="5">5</div>
+                <div class="mood-option" data-rating="6">6</div>
+                <div class="mood-option" data-rating="7">7</div>
+                <div class="mood-option" data-rating="8">8</div>
+                <div class="mood-option" data-rating="9">9</div>
+                <div class="mood-option" data-rating="10">10</div>
+            </div>
+            <textarea class="note-input" id="moodNote" placeholder="Add a note about your day (optional)..."></textarea>
+            <button class="btn" id="logMoodBtn">Log Today's Mood</button>
+        </div>
+        
+        <div class="stats" id="stats">
+            <h3>Your Mood Stats</h3>
+            <div id="statsContent">
+                <p>Log your first mood to see stats!</p>
+            </div>
+        </div>
+        
+        <div class="history" id="history" style="display: none;">
+            <h3 class="history-title">Recent Moods</h3>
+            <div id="historyContent"></div>
+        </div>
+        
+        <button class="btn btn-secondary" id="loadHistoryBtn">View History</button>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
